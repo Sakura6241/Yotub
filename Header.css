@@ -1,0 +1,312 @@
+.Header {
+  height: 65px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background-color: white;
+}
+
+.Left-section {
+  width: 200px;
+  display: flex;
+  align-items: center;
+}
+
+.burger {
+  height: 28px;
+  margin-left: 28px;
+  margin-right: 28px;
+  cursor: pointer;
+}
+
+.yt {
+  height: 23.4px;
+  margin-top: 1px;
+  cursor: pointer;
+  position: relative;
+}
+
+
+
+.Middle-section {
+  max-width: 560px;
+  margin-left: 40px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+
+.bar {
+  display: flex;
+  height: 41.5px;
+  width: 115px;
+  flex: 0.968;
+  font-size: 16px;
+  padding-left: 14px;
+  padding-top: 2.9px;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 2px;
+  border-color: rgb(204, 204, 204);
+  box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+  width: 0;
+}
+
+
+.Search-con,
+.Voice-con {
+  height: 20px;
+}
+
+.search {
+  background-color: rgb(247, 247, 247);
+  height: 46.5px;
+  margin-left: -1px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(204, 204, 204);
+  display: flex;
+  justify-content: center;
+  width: 75.5px;
+  font-weight: 350;
+  position: relative;
+  cursor: pointer;
+}
+
+
+.search:hover {
+ background-color: rgb(230, 229, 229);
+}
+
+.search::placeholder {
+  font-family: 'Roboto';
+  font-weight: 200;
+}
+
+.search .tooltip {
+  background-color: white;
+  font-family: Arial;
+  font-weight: 100;
+  position: absolute;
+  bottom: -30px;
+  padding: 4px;
+  border-width: 1px;
+  border-style: solid;
+  color: rgb(131, 122, 122);
+  border-color: black;
+  opacity: 0;
+  transition-delay: 0s;
+  transition: 0.2s;
+  pointer-events: none;
+}
+
+.search:hover .tooltip {
+  opacity: 1;
+}
+
+.voice {
+  border: none;
+  border-radius: 60px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 8px;
+  height: 46.5px;
+  background-color: rgb(247, 247, 247);
+  cursor: pointer;
+  position: relative;
+}
+
+.voice:hover {
+  background-color: rgb(230, 229, 229);
+}
+
+.Voice-con {
+  height: 27.8px;
+}
+
+.voice .with {
+  position: absolute;
+  background-color: gray;
+  color: white;
+  padding: 9px;
+  border-radius: 3px;
+  width: 140px;
+  left: -40px;
+  bottom: -45px;
+  opacity: 0;
+  cursor: pointer;
+  pointer-events: none;
+  transition: 0.25s;
+}
+
+.voice:hover .with {
+  opacity: 1;
+}
+
+.Search-con {
+  height: 28px;
+  margin-top: 7.5px;
+}
+
+
+.Right-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 240px;
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+
+.up, .ap, .tif {
+  height: 28px;
+}
+ 
+.ap {
+  margin-left: -1px;
+}
+
+.feky {
+  height: 50px;
+  width: 50px;
+  border-radius: 100px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.ate, .you, .not {
+  font-family: 'Roboto';
+} 
+
+.up-container {
+  position: relative;
+  cursor: pointer;
+}
+
+.up-container .ate {
+  position: absolute;
+  top: 60px;
+  background-color: gray;
+  color: white;
+  padding: 5px;
+  border-radius: 2px;
+  right: -12px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.up {
+  background-color: rgb(247, 247, 247);
+  padding: 10px;
+  border-radius: 50px;
+}
+
+.up-container:hover .ate {
+  opacity: 1;
+}
+
+.up:hover {
+  background-color: rgb(235, 234, 234);
+}
+
+
+.ap-container {
+  position: relative;
+  cursor: pointer;
+}
+
+.ap-container .you {
+  position: absolute;
+  top: 65px;
+  right: -50px;
+   background-color: gray;
+   color: white;
+   padding: 6px;
+   width: 102px;
+   border-radius: 2px;
+   opacity: 0;
+   pointer-events: none;
+}
+
+.ap {
+  background-color: rgb(247, 247, 247);
+  padding: 10px;
+  border-radius: 50px;
+}
+
+.ap:hover {
+  background-color: rgb(235, 234, 234);
+}
+
+.ap-container:hover .you {
+  opacity: 1;
+}
+
+
+.tif-container {
+  position: relative;
+  cursor: pointer;
+}
+
+.tif-container .not {
+  background-color: gray;
+  color: white;
+  position: absolute;
+  padding: 6px;
+  border-radius: 2px;
+  top: 40px;
+  right: -40px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.tif {
+  background-color: rgb(247, 247, 247);
+  padding: 10px;
+  border-radius: 50px;
+}
+
+.tif:hover {
+  background-color: rgb(235, 234, 234);;
+}
+
+.tif-container:hover .not {
+  opacity: 1;
+}
+
+.tree {
+  position: absolute;
+  background-color:rgb(199, 0, 0);
+  color: white;
+  font-family: 'Roboto';
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 3px;
+  padding-bottom: 2.5px;
+  border-radius: 50px;
+  font-size: 11px;
+  font-weight: 700;
+  top: 6px;
+  left: 24px;
+}
+
+
+.PH {
+  font-family: 'Roboto';
+  color: rgb(120, 120, 120);
+  position: absolute;
+  top: 15px;
+  font-size: 11px;
+  left: 190px;
+  cursor: pointer;
+}

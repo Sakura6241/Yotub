@@ -1,0 +1,101 @@
+.Video-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: 55px;
+  column-gap: 17px;
+}
+
+.container {
+  display: block;
+}
+
+    @media (max-width: 1920px) {
+        .Info,
+        .Video-grid {
+          grid-template-columns: 1fr 1fr 1fr;
+                  }
+          }
+
+          @media (max-width: 1420px) {
+                  .Video-grid {
+                        grid-template-columns: 1fr 1fr;
+                  }
+          }
+
+          @media (max-width: 700px) {
+            .Video-grid {
+              grid-template-columns: 1fr;
+            }
+          }
+        
+
+
+
+
+
+
+
+
+
+.Mikasa-row {
+  margin-bottom: 10px;
+  position: relative;
+}
+
+
+
+.timer {
+  position: absolute;
+  right: 7px;
+  bottom: 13px;
+  color: white;
+  font-family: 'Roboto';
+  background-color: rgba(0, 0, 0, 0.6);
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 3px;
+  padding-bottom: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 4px;
+}
+
+
+.Mikasa-img {
+width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.Info {
+  display: block;
+  margin-top: 0;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  cursor: pointer;
+} 
+
+.Channelgrid {
+  display: grid;
+  grid-template-columns: 48px 1fr;
+}
+
+.channel {
+  border-radius: 50px;
+  margin-top: 0px;
+  width: 36px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.name,
+.Views {
+ color: rgb(96, 96, 96);
+ cursor: pointer;
+ font-size: 14px;
+ font-weight: 400;
+ line-height: 21px;
+ text-decoration: solid;
+}
+
